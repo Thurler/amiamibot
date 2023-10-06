@@ -1,0 +1,16 @@
+{
+  "name": "amiamibot",
+  "version": "0.0.1",
+  "description": "Discord bot to crawl AmiAmi",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "discord.js": "^11.5.1",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4"
+  },
+  "author": "Thurler",
+  "license": "GPL-3.0"
+}

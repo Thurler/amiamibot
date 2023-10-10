@@ -1,5 +1,8 @@
 {
   "discordActivity": "with AmiAmi",
-  "channel": "Discord channel ID to post to",
+  "server": "Discord server ID to interact with",
+  "noticeChannel": "Discord channel ID to post to",
+  "preorderChannel": "Discord channel ID to read pre-orders from",
+  "deadChannel": "Discord channel ID to read dead pre-orders from",
   "token": "Discord bot token"
 }

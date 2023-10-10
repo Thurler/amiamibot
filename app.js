@@ -97,15 +97,15 @@ const checkProductRevived = async function(product, channel) {
 
 const checkLinks = async function() {
   logSomething('Checking for link updates...');
-  const server = await client.guilds.fetch('596476664762859530');
-  const noticeChannel = await server.channels.fetch('1159661894278324334');
-  const preorderChannel = await server.channels.fetch('1084379406946009138');
+  const server = await client.guilds.fetch(config.server);
+  const noticeChannel = await server.channels.fetch(config.noticeChannel);
+  const preorderChannel = await server.channels.fetch(config.preorderChannel);
   const preorderProducts = await getProductsFromChannel(preorderChannel);
   for (const product of preorderProducts) {
     await checkProductDied(product, noticeChannel);
     await sleep(500);
   }
-  const deadChannel = await server.channels.fetch('1144152227565547571');
+  const deadChannel = await server.channels.fetch(config.deadChannel);
   const deadProducts = await getProductsFromChannel(deadChannel);
   for (const product of deadProducts) {
     await checkProductRevived(product, noticeChannel);

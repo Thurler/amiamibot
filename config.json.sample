@@ -1,4 +1,5 @@
 {
+  "curlImpersonatePath": "/path/to/curl",
   "discordActivity": "with AmiAmi",
   "server": "Discord server ID to interact with",
   "noticeChannel": "Discord channel ID to post to",

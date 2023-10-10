@@ -38,7 +38,7 @@ const checkProductStock = function(product) {
   logSomething(`Checking ${product.title}...`);
   const url = `'https://api.amiami.com/api/v1.0/item?${product.code}&lang=eng'`;
   const commandParts = [
-    '/home/thurler/temp/curl-impersonate/curl_ff109',
+    config.curlImpersonatePath,
     '-s',
     '-H',
     "'X-User-Key: amiami_dev'",

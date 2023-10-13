@@ -63,7 +63,7 @@ const checkProductStock = function(product) {
           logSomething(`URL (${url}) succeeded but did not have cart_type key`);
           return resolve({success: false, exists: false, inStock: false});
         }
-        const inStock = response['item']['cart_type'] === 8;
+        const inStock = [7, 8, 9].includes(response['item']['cart_type']);
         resolve({success: true, exists: true, inStock: inStock});
       } catch (err) {
         logSomething(`Exception parsing url (${url}): ${err}`);
